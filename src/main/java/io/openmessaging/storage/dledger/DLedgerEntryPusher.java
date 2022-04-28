@@ -373,7 +373,7 @@ public class DLedgerEntryPusher {
                     }
 
                     if (ackNum == 0) {
-                        checkResponseFuturesTimeout(quorumIndex);
+                        checkResponseFuturesTimeout(quorumIndex + 1);
                         waitForRunning(1);
                     }
 
